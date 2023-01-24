@@ -20,6 +20,7 @@ public class Main {
         if (anzahl > a.length || anzahl < 0) {
             throw new IllegalArgumentException();
         }
+
         int[] result = new int[anzahl];
         for (int i = 0; i < anzahl; i++) {
             result[i] = a[(int) (Math.random() * a.length)];

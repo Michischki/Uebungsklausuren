@@ -19,10 +19,16 @@ public class Main {
     }
 
     public static int b(int n) {
-        return 2 + a(n);
+        return a(n) * a(n);
     }
 
     public static int c(int m, int n) {
-        return n == 0 ? 2 * m : a(m) + b(n);
+        if (n < 0 ) {
+            return 4 * a(n);
+        } else if (n > 0) {
+            return 3 * a(m) * b(n);
+        } else {
+            return b(n) * b(n);
+        }
     }
 }

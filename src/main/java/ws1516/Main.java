@@ -17,6 +17,11 @@ public class Main {
         System.out.println("Durchschnitt bis Position 5: " + berechneDurchschnittBis(array, 5));
         System.out.println("Durchschnitt bis Position 10: " + berechneDurchschnittBis(array, 10));
         System.out.println("Durchschnitt bis Position 15: " + berechneDurchschnittBis(array, 15));
+        try {
+            System.out.println("Durchschnitt bis Position -1: " + berechneDurchschnittBis(array, -1));
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+        }
     }
 
     public static double berechneDurchschnittBis(int[] a, int bis) {
